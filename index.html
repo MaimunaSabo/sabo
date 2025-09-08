@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Drawer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">MySite</div>
+      <ul class="nav-items desktop-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+    <!-- Side Drawer for Mobile -->
+    <div class="side-drawer" id="sideDrawer">
+      <div class="Close-btn" id="CloseBtn">&times;</div>
+      <ul class="nav-item">
+        <nav>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">contact</a></li>
+        </nav>
+      </ul>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="script js"></script>
+  </body>
+</html>
