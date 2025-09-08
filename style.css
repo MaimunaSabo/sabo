@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Desktop nav links */
+.nav-item {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-items li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+.nav-items li a:hover {
+  color: #f0a500;
+}
+/* Hamburger icon - hidden on desktop */
+.hamburger {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+/* Side Drawer */
+.side-drawer {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #222;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.side-drawer-open {
+  right: 0;
+}
+.side-drawer .Close-btn {
+  font-size: 30px;
+}
+.side-drawer ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  display: none;
+  z-index: 1000;
+}
+.overlay-active {
+  display: block;
+}
+/* Responsive rules */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .side-drawer {
+    display: block;
+  }
+}
